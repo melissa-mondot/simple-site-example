@@ -1,0 +1,18 @@
+$darkGreen: #006400;
+$medGreen: #008c00;
+$lightGreen: #00ac00;
+
+body {
+  max-width: 1024px;
+  margin: auto;
+  padding: 0;
+  .animated-icon {
+    max-height: 8rem;
+    &:hover {
+      animation: bounce 1s ease 0.25s 1 normal none;
+    }
+  }
+  .carousel-item {
+    height: 10rem;
+  }
+}
