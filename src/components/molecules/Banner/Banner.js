@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 
 // TODO: pass in var for button. Hide button unless var is passed in to Banner
 
-const Banner = ({ src, text, btnTxt, title, right }) => {
+const Banner = ({ src, text, btnTxt, title, right, light }) => {
   const offsetBy = right ? 6 : 1;
   return (
     <Row
@@ -15,7 +15,10 @@ const Banner = ({ src, text, btnTxt, title, right }) => {
         backgroundImage: `url(${src})`,
       }}
     >
-      <Col className="my-auto" xs={{ span: 6, offset: offsetBy }}>
+      <Col
+        className={`my-auto text-${light ? "light" : "dark"}`}
+        xs={{ span: 6, offset: offsetBy }}
+      >
         <h2>{title}</h2>
         <p>{text}</p>
         <Button>{btnTxt}</Button>

@@ -33,6 +33,7 @@ const Home = () => (
     />
     <Banner
       src={bannerOne}
+      light
       text={"Duis nisl magna est sociis."}
       btnTxt={"Sig Almet"}
     />
