@@ -2,14 +2,12 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 
-// // images
-
-const Header = () => (
+const Header = ({ logo }) => (
   <Navbar className="position-absolute" bg="transparent" variant="transparent">
     <Container>
-      <Navbar.Brand>
-        {/* <img src={logo} alt="" height="30" /> */}
-        <h1 className="text-black-50">Company Logo</h1>
+      <Navbar.Brand className="d-flex align-items-center">
+        <img src={logo} alt="" height="60" />
+        <p className="text-black-50">Company Name</p>
       </Navbar.Brand>
     </Container>
   </Navbar>
