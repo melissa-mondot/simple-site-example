@@ -10,12 +10,9 @@ const Banner = ({ src, text, btnTxt, title, right }) => {
   const offsetBy = right ? 6 : 1;
   return (
     <Row
+      className="banner m-0"
       style={{
         backgroundImage: `url(${src})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        minHeight: "20rem",
-        margin: "0",
       }}
     >
       <Col className="my-auto" xs={{ span: 6, offset: offsetBy }}>

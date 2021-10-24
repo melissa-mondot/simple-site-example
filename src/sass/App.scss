@@ -15,4 +15,13 @@ body {
   .carousel-item {
     height: 10rem;
   }
+  .img-card {
+    min-height: 20rem;
+    background-position: center;
+  }
+  .banner {
+    background-size: cover;
+    background-position: center;
+    min-height: 20rem;
+  }
 }
