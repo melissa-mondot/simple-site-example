@@ -17,8 +17,8 @@ const IconCard = ({ icons }) => {
     />
   ));
   return (
-    <Col className="icon-card m-0 p-0">
-      <Row className="gx-0 p-3" xs={2}>
+    <Col className="icon-card">
+      <Row xs={2}>
         {iconTiles}
       </Row>
     </Col>

@@ -10,7 +10,7 @@ const Banner = ({ src, text, btnTxt, title, right, light }) => {
   const offsetBy = right ? 6 : 1;
   return (
     <Row
-      className="banner m-0"
+      className="banner"
       style={{
         backgroundImage: `url(${src})`,
       }}

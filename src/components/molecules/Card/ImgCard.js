@@ -3,7 +3,7 @@ import Col from "react-bootstrap/Col";
 
 const ImgCard = ({ src }) => (
   <Col
-    className="img-card m-0 p-0"
+    className="img-card"
     style={{ backgroundImage: `url(${src})`, backgroundSize: "cover" }}
   >
     {""}

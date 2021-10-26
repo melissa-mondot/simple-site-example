@@ -3,11 +3,11 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 
 const Header = ({ logo }) => (
-  <Navbar className="position-absolute" bg="transparent" variant="transparent">
+  <Navbar className="nav" bg="transparent" variant="transparent">
     <Container>
-      <Navbar.Brand className="d-flex align-items-center">
+      <Navbar.Brand>
         <img src={logo} alt="" height="60" />
-        <p className="text-black-50">Company Name</p>
+        <p >Company Name</p>
       </Navbar.Brand>
     </Container>
   </Navbar>

@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="bg-secondary">
       <Container className="footer">
-        <div className="business-info d-flex flex-column pt-4 mx-3">
+        <div className="business-info">
           <h1>Business Name</h1>
           <p>
             <i>
@@ -18,33 +18,33 @@ const Footer = () => {
             </i>
           </p>
           <address>
-            <p className="mb-0">123 4th St</p>
-            <p className="mb-0"> Somewhere, Earth</p>
-            <p className="mb-0">
+            <p>123 4th St</p>
+            <p> Somewhere, Earth</p>
+            <p>
               <i>
-                <Image src={phone} style={{ height: "1rem" }} />
+                <Image src={phone}  />
               </i>{" "}
               555.555.5555
             </p>
             <p>
               <i>
-                <Image src={email} style={{ height: "1rem" }} />
+                <Image src={email}  />
               </i>{" "}
               info@companyname.com
             </p>
           </address>
         </div>
       </Container>
-      <Container fluid className="px-0">
-        <div className="pt-2">
+      <Container fluid >
+        <div >
           <div
-            className="socmed d-flex justify-content-around"
-            style={{ height: "3rem" }}
+            className="socmed"
+            
           >
-            <Image className="my-1" src={instagram} alt="Instagram logo" />
-            <Image className="my-1" src={facebook} alt="Facebook logo" />
+            <Image src={instagram} alt="Instagram logo" />
+            <Image  src={facebook} alt="Facebook logo" />
           </div>
-          <div className="mt-4 p-1">
+          <div >
             <small>
               Company Name, All Rights Reserved {currDate.getFullYear()}
             </small>

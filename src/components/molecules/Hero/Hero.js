@@ -10,7 +10,7 @@ const Hero = ({ src }) => (
       Video tag is not supported in this browser.
     </video>
     <Row>
-      <Col className="hero-text text-light">
+      <Col className="hero-text">
         <h1>Lorem Ipsum Dineth</h1>
         <p>Lorem ipsum dolor sit amet consectetur.</p>
         <Button>et dolore</Button>

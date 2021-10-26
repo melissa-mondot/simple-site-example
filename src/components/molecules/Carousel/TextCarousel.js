@@ -6,7 +6,7 @@ const TextCarousel = ({ items }) => {
   // console.log(items);
   const slides = items.map((key, item) => (
     <Carousel.Item key={key}>
-      <Carousel.Caption className="text-dark">
+      <Carousel.Caption className="captions">
         <p>
           <b>{items[item][0]}</b>
         </p>
@@ -16,10 +16,8 @@ const TextCarousel = ({ items }) => {
   ));
   return (
     <>
-      <Container className="text-carousel mx-auto">
-        <h4 className="text-center mt-4">
-          What some of our clients are saying:
-        </h4>
+      <Container className="text-carousel">
+        <h4>What some of our clients are saying:</h4>
         <Carousel variant="dark">{slides}</Carousel>
       </Container>
     </>
