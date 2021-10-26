@@ -1,6 +1,37 @@
 $darkGreen: #006400;
 $medGreen: #008c00;
 $lightGreen: #00ac00;
+$xsScreen: 576px;
+$smScreen: 768px;
+$mdScreen: 992px;
+$lgScreen: 1200px;
+
+// Mixins
+
+// Small Screen - above 575 and below 767 px
+@mixin sm-screen {
+  @media only screen and (min-width: $xsScreen) {
+    @content;
+  }
+}
+// Medium Screen - above 767 and below 992 px
+@mixin med-screen {
+  @media only screen and (min-width: $smScreen) {
+    @content;
+  }
+}
+// Large Screen - above 992 and below 1200 px
+@mixin lg-screen {
+  @media only screen and (min-width: $mdScreen) {
+    @content;
+  }
+}
+// XL Screen  - above 1200 px
+@mixin xl-screen {
+  @media only screen and (min-width: $lgScreen) {
+    @content;
+  }
+}
 
 body {
   max-width: 1024px;
@@ -10,6 +41,29 @@ body {
     max-height: 8rem;
     &:hover {
       animation: bounce 1s ease 0.25s 1 normal none;
+    }
+  }
+  .hero {
+    max-width: 1024px;
+    video {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+    }
+    .row {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      @include med-screen {
+        top: 25%;
+      }
+      @include lg-screen {
+        top: 30%;
+      }
+      @include xl-screen {
+        left: 25%;
+      }
     }
   }
   .carousel-item {

@@ -9,6 +9,44 @@ body .animated-icon {
 body .animated-icon:hover {
   animation: bounce 1s ease 0.25s 1 normal none;
 }
+body .hero {
+  max-width: 1024px;
+}
+body .hero video {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+body .hero .row {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+@media only screen and (min-width: 768px) {
+  body .hero .row {
+    top: 25%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body .hero .row {
+    top: 30%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body .hero .row {
+    left: 25%;
+  }
+}
 body .carousel-item {
   height: 10rem;
+}
+body .img-card {
+  min-height: 20rem;
+  background-position: center;
+}
+body .banner {
+  background-size: cover;
+  background-position: center;
+  min-height: 20rem;
 }

@@ -2,17 +2,18 @@ import React from "react";
 import { Banner, Hero, TextCarousel } from "../molecules";
 import { InfoOne, InfoTwo } from "../organisms";
 // images
+import heroVid from "../../assets/movies/hero-movie.mp4";
 import bannerOne from "../../assets/imgs/banner-1.jpg";
 import bannerTwo from "../../assets/imgs/banner-2.jpg";
 import imageCardOne from "../../assets/imgs/img-1.jpg";
 import { engagement, family, health, nourish } from "../../assets/icons/index";
+// const heroVid = "../../assets/movies/hero-movie.mp4";
 const icons = [
   [nourish, "nourish"],
   [health, "health"],
   [family, "family"],
   [engagement, "engagement"],
 ];
-const heroImage = "https://via.placeholder.com/1440x800";
 const reviews = [
   ["Neque in odio vel, sit lobortis erat.", "Fugit Quam"],
   ["Quam in ac quam. Duis et, non arcu imperdiet.", "Fugit Quam"],
@@ -22,7 +23,7 @@ const reviews = [
 
 const Home = () => (
   <div className="home m-0 p-0">
-    <Hero src={heroImage} />
+    <Hero src={heroVid} />
     <InfoOne
       title={"Lorem Ipsum"}
       text={
