@@ -32,36 +32,54 @@ $lgScreen: 1200px;
     @content;
   }
 }
+// Hover except mobile
+@mixin hover {
+  @media not all and (pointer: coarse) {
+    &:hover {
+      @content;
+    }
+  }
+}
 
 body {
   max-width: 1024px;
   margin: auto;
   padding: 0;
-  .animated-icon {
-    max-height: 8rem;
-    &:hover {
-      animation: bounce 1s ease 0.25s 1 normal none;
+  nav.nav {
+    .container {
+      .navbar-brand {
+        display: flex;
+        align-items: flex-end;
+      }
     }
   }
   .hero {
-    max-width: 1024px;
-    video {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      margin: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    .movie-wrapper {
+      width: 150vw;
+      @include xl-screen {
+        width: 100vw;
+      }
+      video {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
     }
     .row {
+      color: #fff;
       position: absolute;
-      top: 10%;
+      top: 35%;
       left: 10%;
       @include med-screen {
-        top: 25%;
+        top: 50%;
       }
       @include lg-screen {
-        top: 30%;
+        top: 50%;
       }
       @include xl-screen {
+        top: 40%;
         left: 25%;
       }
     }
@@ -72,6 +90,14 @@ body {
   .img-card {
     min-height: 20rem;
     background-position: center;
+  }
+  .icon-card {
+    .animated-icon {
+      max-height: 8rem;
+      &:hover {
+        animation: bounce 1s ease 0.25s 1 normal none;
+      }
+    }
   }
   .banner {
     background-size: cover;

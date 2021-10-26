@@ -7,7 +7,7 @@ const Header = ({ logo }) => (
     <Container>
       <Navbar.Brand>
         <img src={logo} alt="" height="60" />
-        <p >Company Name</p>
+        <p>Company Name</p>
       </Navbar.Brand>
     </Container>
   </Navbar>

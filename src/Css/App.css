@@ -3,38 +3,46 @@ body {
   margin: auto;
   padding: 0;
 }
-body .animated-icon {
-  max-height: 8rem;
-}
-body .animated-icon:hover {
-  animation: bounce 1s ease 0.25s 1 normal none;
+body nav.nav .container .navbar-brand {
+  display: flex;
+  align-items: flex-end;
 }
 body .hero {
-  max-width: 1024px;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
-body .hero video {
+body .hero .movie-wrapper {
+  width: 150vw;
+}
+@media only screen and (min-width: 1200px) {
+  body .hero .movie-wrapper {
+    width: 100vw;
+  }
+}
+body .hero .movie-wrapper video {
   width: 100%;
   height: 100%;
-  overflow: hidden;
   margin: 0;
 }
 body .hero .row {
+  color: #fff;
   position: absolute;
-  top: 10%;
+  top: 35%;
   left: 10%;
 }
 @media only screen and (min-width: 768px) {
   body .hero .row {
-    top: 25%;
+    top: 50%;
   }
 }
 @media only screen and (min-width: 992px) {
   body .hero .row {
-    top: 30%;
+    top: 50%;
   }
 }
 @media only screen and (min-width: 1200px) {
   body .hero .row {
+    top: 40%;
     left: 25%;
   }
 }
@@ -44,6 +52,12 @@ body .carousel-item {
 body .img-card {
   min-height: 20rem;
   background-position: center;
+}
+body .icon-card .animated-icon {
+  max-height: 8rem;
+}
+body .icon-card .animated-icon:hover {
+  animation: bounce 1s ease 0.25s 1 normal none;
 }
 body .banner {
   background-size: cover;
