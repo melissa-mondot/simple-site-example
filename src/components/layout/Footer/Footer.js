@@ -1,9 +1,9 @@
 import React from "react";
 // import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
-import Image from "react-bootstrap/Image";
+// import Image from "react-bootstrap/Image";
 // images
-import { instagram, facebook, phone, email } from "../../../assets/icons";
+import fontIcons from "../../../assets/icons/fontAwesome";
 
 const Footer = () => {
   const currDate = new Date();
@@ -21,30 +21,23 @@ const Footer = () => {
             <p>123 4th St</p>
             <p> Somewhere, Earth</p>
             <p>
-              <i>
-                <Image src={phone}  />
-              </i>{" "}
+              <svg src={fontIcons.phone} />
               555.555.5555
             </p>
             <p>
-              <i>
-                <Image src={email}  />
-              </i>{" "}
+              <svg src={fontIcons.email} />
               info@companyname.com
             </p>
           </address>
         </div>
       </Container>
-      <Container fluid >
-        <div >
-          <div
-            className="socmed"
-            
-          >
-            <Image src={instagram} alt="Instagram logo" />
-            <Image  src={facebook} alt="Facebook logo" />
+      <Container fluid>
+        <div>
+          <div className="socmed">
+            <svg src={fontIcons.instagram} alt="Instagram logo" />
+            <svg src={fontIcons.twitter} alt="Twitter logo" />
           </div>
-          <div >
+          <div>
             <small>
               Company Name, All Rights Reserved {currDate.getFullYear()}
             </small>

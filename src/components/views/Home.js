@@ -6,13 +6,12 @@ import heroVid from "../../assets/movies/hero-movie.mp4";
 import bannerOne from "../../assets/imgs/banner-1.jpg";
 import bannerTwo from "../../assets/imgs/banner-2.jpg";
 import imageCardOne from "../../assets/imgs/img-1.jpg";
-import { engagement, family, health, nourish } from "../../assets/icons/index";
-// const heroVid = "../../assets/movies/hero-movie.mp4";
-const icons = [
-  [nourish, "nourish"],
-  [health, "health"],
-  [family, "family"],
-  [engagement, "engagement"],
+import fontIcons from "../../assets/icons/fontAwesome";
+const iconLinks = [
+  [fontIcons.nourish, "nourish"],
+  [fontIcons.health, "health"],
+  [fontIcons.family, "family"],
+  [fontIcons.engagement, "engagement"],
 ];
 const reviews = [
   ["Neque in odio vel, sit lobortis erat.", "Fugit Quam"],
@@ -44,7 +43,7 @@ const Home = () => (
         "Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula."
       }
       linkText={"> Lorem Ipsum"}
-      icons={icons}
+      icons={iconLinks}
     />
     <Banner
       right

@@ -49,12 +49,6 @@ body .img-card {
   min-height: 20rem;
   background-position: center;
 }
-body .icon-card .animated-icon {
-  max-height: 8rem;
-}
-body .icon-card .animated-icon:hover {
-  animation: bounce 1s ease 0.25s 1 normal none;
-}
 body .info-card {
   padding: 1rem 3rem;
 }

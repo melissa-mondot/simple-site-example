@@ -1,9 +1,0 @@
-export { default as instagram } from "./instagram.svg";
-export { default as facebook } from "./facebook.svg";
-export { default as welcome } from "./welcome.svg";
-export { default as phone } from "./phone.svg";
-export { default as email } from "./envelope.svg";
-export { default as engagement } from "./engagement.svg";
-export { default as family } from "./family.svg";
-export { default as health } from "./health.svg";
-export { default as nourish } from "./nourish.svg";

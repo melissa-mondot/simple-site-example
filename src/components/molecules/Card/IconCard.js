@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 // icons
@@ -7,20 +6,16 @@ import Col from "react-bootstrap/Col";
 // TODO: subtle animation for icons
 
 const IconCard = ({ icons }) => {
-  // console.log(icons);
+  console.log(icons);
   const iconTiles = icons.map((key, icon) => (
-    <Image
-      key={key}
-      className="animated-icon"
-      src={icons[icon][0]}
-      alt={`Icon of ${icons[icon][1]}`}
-    />
+    <div key={key} className="animated-icon">
+      
+    </div>
   ));
   return (
     <Col className="icon-card">
-      <Row xs={2}>
-        {iconTiles}
-      </Row>
+      {" "}
+      <Row xs={2}>{iconTiles}</Row>{" "}
     </Col>
   );
 };

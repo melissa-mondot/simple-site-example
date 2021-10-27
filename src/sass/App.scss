@@ -90,12 +90,12 @@ body {
     background-position: center;
   }
   .icon-card {
-    .animated-icon {
-      max-height: 8rem;
-      &:hover {
-        animation: bounce 1s ease 0.25s 1 normal none;
-      }
-    }
+    // .animated-icon {
+    //   max-height: 8rem;
+    //   &:hover {
+    //     animation: bounce 1s ease 0.25s 1 normal none;
+    //   }
+    // }
   }
   .info-card {
     padding: 1rem 3rem;
