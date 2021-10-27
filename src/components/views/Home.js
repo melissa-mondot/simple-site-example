@@ -39,7 +39,7 @@ const Home = () => (
       btnTxt={"Sig Almet"}
     />
     <InfoTwo
-      title={"Lorem ipsum dolor sit amet"}
+      title={"Dolor sit amet"}
       text={
         "Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula."
       }
