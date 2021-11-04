@@ -49,6 +49,23 @@ body .img-card {
   min-height: 20rem;
   background-position: center;
 }
+body .icon-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .icon-card .icons {
+  display: flex;
+}
+body .icon-card .icons .animated-icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+body .icon-card .icons .animated-icon:hover {
+  animation: bounce 1s ease 0.25s 1 normal none;
+}
 body .info-card {
   padding: 1rem 3rem;
 }
