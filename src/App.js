@@ -4,7 +4,7 @@ import Header from "./components/layout/Header/Header";
 import Footer from "./components/layout/Footer/Footer";
 import { Home, Test } from "./components/views";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./sass/App.scss";
+import "./Sass/App.scss";
 // logo
 import logo from "./assets/logo/logo-color.svg";
 const App = () => (

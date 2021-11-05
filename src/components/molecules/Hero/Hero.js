@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 
 const Hero = ({ src }) => (
   <div className="hero">
-    <div class="movie-wrapper">
+    <div className="movie-wrapper">
       <video src={src} autoPlay muted loop preload="true">
         <source src={src} type="video/mp4" />
         Video tag is not supported in this browser.
